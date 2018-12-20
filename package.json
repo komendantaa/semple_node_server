@@ -1,0 +1,23 @@
+{
+  "name": "semple-node-api",
+  "version": "1.0.0",
+  "description": "just for test requests",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/komendantaa/semple_node_server.git"
+  },
+  "author": "Komandante Alex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/komendantaa/semple_node_server/issues"
+  },
+  "homepage": "https://github.com/komendantaa/semple_node_server#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}

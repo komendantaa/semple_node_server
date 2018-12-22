@@ -1,74 +1,27 @@
-var appRouter = function (app) {
+const companies = require("../assets/data/company/companies");
+const category = require("../assets/data/category/category");
+const sport = require("../assets/data/options/sport");
+const questionsArr = require("../assets/data/questions/questions");
+const question_1 = require("../assets/data/questions/question_1");
+const advertisementsArr = require("../assets/data/ads/advertisements");
+const advertisement_1 = require("../assets/data/ads/advertisement_1");
+
+const appRouter = function (app) {
+    //REQUIRED
+    app.get("/", (req, res) => res.send(`Hello World! )`));
+
+    app.get("/api/login", (req, res) => res.send({}));
+    app.post("/api/login", function (req, res) {
+        return res.send({"token": "dajhbawd8789d7aw98d"});
+    });
+
     app.get("/api/currentUserId", function (req, res) {
         return res.send({"id": "8"});
     });
 
-    app.options("/api/search/company", function (req, res) {
-        return res.send({});
-    });
-
+    app.options("/api/search/company", (req, res) => res.send({}));
     app.post("/api/search/company", function (req, res) {
-        return res.send({
-            "paginationData": {
-                "last": 10,
-                "current": 1,
-                "numItemsPerPage": 10,
-                "first": 1,
-                "pageCount": 10,
-                "totalCount": 94,
-                "pageRange": 5,
-                "startPage": 1,
-                "endPage": 5.0,
-                "next": 2,
-                "pagesInRange": [1, 2, 3, 4, 5],
-                "firstPageInRange": 1,
-                "lastPageInRange": 5,
-                "currentItemCount": 10,
-                "firstItemNumber": 1,
-                "lastItemNumber": 10
-            },
-            "itemsData": [
-                {
-                    "id": 198,
-                    "email": "kkjkjkjnnjknjk@gmail.com",
-                    "firstName": "123456",
-                    "lastName": "123456",
-                    "jobPosition": null,
-                    "companyName": "1234556",
-                    "slug": "123456-123456-1234556",
-                    "shortDescription": null,
-                    "isActive": false,
-                    "isPublic": true,
-                    "isConfidentialLocation": false,
-                    "isTwoFactorAuth": false,
-                    "twoFactorAuthProvider": null,
-                    "phone": null,
-                    "avatarUrl": null,
-                    "location": {
-                        "country": [],
-                        "city": null,
-                        "state": [],
-                        "zipCode": null
-                    }
-                }
-            ]
-        });
-    });
-
-    app.get("/api/assessment/", function (req, res) {
-        return res.send([
-            {
-                "id": 1,
-                "title": "Title Assessment Finance goes here",
-                "label": "Microsoft windows Powershell",
-                "description": "Finance Loreusmod tempor incididunt ut labore et dolore magnanisi ut aliquip ex ea commodo consequat",
-                "timeLimit": 20,
-                "category": {
-                    "id": 1,
-                    "title": "Accounting"
-                }
-            }
-        ]);
+        return res.send(companies);
     });
 
     app.get("/api/notifications/", function (req, res) {
@@ -82,44 +35,39 @@ var appRouter = function (app) {
         ]);
     });
 
-    app.get("/api/login", function (req, res) {
-        return res.send({});
+    app.options("/api/category/list", (req, res) => res.send({}));
+    app.get("/api/category/list", function (req, res) {
+        return res.send(category);
     });
 
-    app.post("/api/login", function (req, res) {
-        return res.send(
-            {
-                "token": "dajhbawd8789d7aw98d",
-            }
-        );
-    });
+    //SPECIFIC
+    // req.body.username
 
-    app.get("/account", function (req, res) {
-        var accountMock = {
-            "username": "nraboy",
-            "password": "1234",
-            "twitter": "@nraboy"
-        }
-        if (!req.body.username) {
-            return res.send({
-                "status": "error",
-                "message": "missing username"
-            });
-        } else {
-            return res.send(accountMock);
-        }
-    });
+    //questions
+    app.options("/api/question/", (req, res) => res.send({}));
+    app.get("/api/question/", (req, res) => res.send(questionsArr));
+    app.post("/api/question/", (req, res) => res.send(questionsArr));
 
-    app.post("/account", function (req, res) {
-        if (!req.body.username || !req.body.password || !req.body.twitter) {
-            return res.send({
-                "status": "error",
-                "message": "missing a parameter"
-            });
-        } else {
-            return res.send({"message": "Welcome!"});
-        }
-    });
-}
+    app.options("/api/question/1", (req, res) => res.send({}));
+    app.get("/api/question/1", (req, res) => res.send(question_1));
+
+    app.options("/api/question/edit/1", (req, res) => res.send({}));
+    app.post("/api/question/edit/1", (req, res) => res.send(question_1));
+
+    //advertisement
+    app.options("/api/advertisement/", (req, res) => res.send({}));
+    app.get("/api/advertisement/", (req, res) => res.send(advertisementsArr));
+    app.post("/api/advertisement/", (req, res) => res.send(advertisementsArr));
+
+    app.options("/api/advertisement/1", (req, res) => res.send({}));
+    app.get("/api/advertisement/1", (req, res) => res.send(advertisement_1));
+
+    app.options("/api/advertisement/edit/1", (req, res) => res.send({}));
+    app.post("/api/advertisement/edit/1", (req, res) => res.send(advertisement_1));
+
+    //options
+    app.options("/api/options/sport", (req, res) => res.send({}));
+    app.get("/api/options/sport", (req, res) => res.send(sport));
+};
 
 module.exports = appRouter;

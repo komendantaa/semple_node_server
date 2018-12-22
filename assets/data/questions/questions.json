@@ -1,0 +1,12 @@
+[
+	{
+		"id": 1,
+		"title": "Just for fun",
+		"startTime": "Fri, 30 Nov 2019 09:12:27 GMT",
+		"timeLimit": 20,
+		"sport": {
+			"id": 1,
+			"name": "Beerpong"
+		}
+	}
+]

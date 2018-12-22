@@ -1,0 +1,66 @@
+{
+	"id": 1,
+	"title": "Title Assessment Finance goes here",
+	"startTime": "Fri, 30 Nov 2019 09:12:27 GMT",
+	"timeLimit": 20,
+	"sport": {
+		"id": 3,
+		"name": "Boxing"
+	},
+	"questions": [
+		{
+			"text": "What does HTML stand for?",
+			"answers": [
+				{
+					"key": 1,
+					"title": "Hyperlinks and Text Markup Language"
+				},
+				{
+					"key": 2,
+					"title": "Home Tool Markup Language"
+				},
+				{
+					"key": 3,
+					"title": "Hyper Text Markup Language"
+				}
+			],
+			"correctAnswers": [3]
+		},
+		{
+			"text": "Who is making the Web standards?",
+			"answers": [
+				{
+					"key": 1,
+					"title": "Google"
+				},
+				{
+					"key": 2,
+					"title": "The World Wide Web Consortium"
+				},
+				{
+					"key": 3,
+					"title": "Microsoft"
+				}
+			],
+			"correctAnswers": [2]
+		},
+		{
+			"text": "Choose the correct HTML element for the largest heading:",
+			"answers": [
+				{
+					"key": 1,
+					"title": "<heading>"
+				},
+				{
+					"key": 2,
+					"title": "<h6>"
+				},
+				{
+					"key": 3,
+					"title": "<head>"
+				}
+			],
+			"correctAnswers": [2, 3]
+		}
+	]
+}

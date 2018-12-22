@@ -1,0 +1,45 @@
+{
+  "paginationData": {
+    "last": 10,
+    "current": 1,
+    "numItemsPerPage": 10,
+    "first": 1,
+    "pageCount": 10,
+    "totalCount": 94,
+    "pageRange": 5,
+    "startPage": 1,
+    "endPage": 5.0,
+    "next": 2,
+    "pagesInRange": [1, 2, 3, 4, 5],
+    "firstPageInRange": 1,
+    "lastPageInRange": 5,
+    "currentItemCount": 10,
+    "firstItemNumber": 1,
+    "lastItemNumber": 10
+  },
+  "itemsData": [
+    {
+      "id": 198,
+      "email": "kkjkjkjnnjknjk@gmail.com",
+      "firstName": "123456",
+      "lastName": "123456",
+      "jobPosition": null,
+      "companyName": "1234556",
+      "slug": "123456-123456-1234556",
+      "shortDescription": null,
+      "isActive": false,
+      "isPublic": true,
+      "isConfidentialLocation": false,
+      "isTwoFactorAuth": false,
+      "twoFactorAuthProvider": null,
+      "phone": null,
+      "avatarUrl": null,
+      "location": {
+        "country": [],
+        "city": null,
+        "state": [],
+        "zipCode": null
+      }
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+	"category": {
+		"1": {
+			"id": 1,
+			"name": "Accounting",
+			"isMain": 1,
+			"parentId": null,
+			"children": [
+				{
+					"id": 5,
+					"name": "Internal Audit",
+					"isMain": 0,
+					"parentId": 1
+				}, {
+					"id": 6,
+					"name": "External Audit",
+					"isMain": 0,
+					"parentId": 1
+				}, {
+					"id": 7,
+					"name": "Governance, Risk and Compliance",
+					"isMain": 0,
+					"parentId": 1
+				}, {
+					"id": 16,
+					"name": "Outsourced CFO",
+					"isMain": 0,
+					"parentId": 1
+				}, {
+					"id": 21,
+					"name": "SEC Reporting",
+					"isMain": 0,
+					"parentId": 1
+				}, {
+					"id": 22,
+					"name": "Bookkeeping",
+					"isMain": 0,
+					"parentId": 1
+				}, {
+					"id": 24,
+					"name": "Test 123",
+					"isMain": 0,
+					"parentId": 1
+				}
+			]
+		},
+		"2": {
+			"id": 2,
+			"name": "Finance",
+			"isMain": 1,
+			"parentId": null,
+			"children": [
+				{
+					"id": 8,
+					"name": "Budget and Forecasts",
+					"isMain": 0,
+					"parentId": 2
+				}, {
+					"id": 9,
+					"name": "Financial Planning",
+					"isMain": 0,
+					"parentId": 2
+				}, {
+					"id": 10,
+					"name": "Due Diligence",
+					"isMain": 0,
+					"parentId": 2
+				}, {
+					"id": 11,
+					"name": "main subcategory 4 for finance",
+					"isMain": 0,
+					"parentId": 2
+				}, {
+					"id": 17,
+					"name": "additional subcategory for finance",
+					"isMain": 0,
+					"parentId": 2
+				}, {
+					"id": 23,
+					"name": "Test Test",
+					"isMain": 0,
+					"parentId": 2
+				}, {
+					"id": 25,
+					"name": "Internal Audit",
+					"isMain": 0,
+					"parentId": 2
+				}
+			]
+		},
+		"3": {
+			"id": 3,
+			"name": "Technology",
+			"isMain": 1,
+			"parentId": null,
+			"children": [
+				{
+					"id": 4,
+					"name": "ERP Implementation",
+					"isMain": 0,
+					"parentId": 3
+				}, {
+					"id": 12,
+					"name": "SOC Reporting",
+					"isMain": 0,
+					"parentId": 3
+				}, {
+					"id": 13,
+					"name": "IT Assessment",
+					"isMain": 0,
+					"parentId": 3
+				}, {
+					"id": 14,
+					"name": "Cybersecurity",
+					"isMain": 0,
+					"parentId": 3
+				}, {
+					"id": 15,
+					"name": "IT Audit",
+					"isMain": 0,
+					"parentId": 3
+				}, {
+					"id": 18,
+					"name": "Project Management",
+					"isMain": 0,
+					"parentId": 3
+				}, {
+					"id": 19,
+					"name": "Digital Transformation",
+					"isMain": 0,
+					"parentId": 3
+				}, {
+					"id": 20,
+					"name": "PCI Compliance",
+					"isMain": 0,
+					"parentId": 3
+				}
+			]
+		}
+	}
+}

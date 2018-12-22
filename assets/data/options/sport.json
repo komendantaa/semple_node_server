@@ -1,0 +1,16 @@
+[
+	{"id":1, "name": "Football", "available": true},
+	{"id":2, "name": "Cricket", "available": false},
+	{"id":3, "name": "Boxing", "available": false},
+	{"id":4, "name": "Darts", "available": false},
+	{"id":5, "name": "Cycling", "available": false},
+	{"id":6, "name": "Formula One", "available": false},
+	{"id":7, "name": "Golf", "available": false},
+	{"id":8, "name": "Horse Racing", "available": false},
+	{"id":9, "name": "MLB", "available": false},
+	{"id":10, "name": "NBA", "available": false},
+	{"id":11, "name": "NFL", "available": false},
+	{"id":12, "name": "Rugby", "available": false},
+	{"id":13, "name": "Snooker", "available": false},
+	{"id":14, "name": "Tennis", "available": false}
+]
